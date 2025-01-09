@@ -14,3 +14,20 @@ def displayboard(board):
 displayboard(board)
 
 def check_win(board, player):
+  won = False
+  if board[0][0] == player and board[0][1] == player and board[0][2] == player:
+      won = True
+  if board[1][0] == player and board[1][1] == player and board[1][2] == player:
+    won = True
+  if board[2][0] == player and board[2][1] == player and board[2][2] == player:
+    won = True
+  if board[0][0] == player and board[1][0] == player and board[2][0] == player:
+    won = True
+  if board[0][1] == player and board[1][1] == player and board[2][1] == player:
+    won = True
+  if board[0][2] == player and board[1][2] == player and board[2][2] == player:
+    won = True
+  if board[0][0] == player and board[1][1] == player and board[2][2] == player:
+    won = True
+  if board[0][2] == player and board[1][1] == player and board[2][0] == player:
+    won = True
